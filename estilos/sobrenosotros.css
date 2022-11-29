@@ -1,0 +1,275 @@
+* {
+  /*lo utilizamos para el responsive,
+    seria la suma del ancho y relleno de los elementos*/
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: black;
+}
+
+h1 {
+  text-align: center;
+}
+
+body {
+  background-image: url("/imagenes/pexels-scott-webb-2824173.jpg");
+  background-size: cover;
+}
+
+@media only screen and (max-width: 1100px) {
+  img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: relative;
+  }
+}
+
+h1 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+h3 {
+  text-align: justify;
+}
+
+h2 {
+  font-weight: 400;
+  text-align: center;
+  color: black;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+
+img {
+  width: 100%;
+  margin: 1em 0;
+}
+
+main {
+
+  padding: 3rem;
+  margin: 3rem auto;
+  max-width: 800px;
+  display: block;
+  /*para IE*/
+}
+
+.menu_bar {
+  display: none;
+  position: absolute;
+}
+
+
+header nav {
+  background: #E7E7E7;
+  z-index: 1000;
+  width: 100%;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  position: relative;
+}
+
+header nav ul li:hover {
+  background: #ffffff;
+}
+
+header nav ul li a {
+  color: black;
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+}
+
+header nav ul li a span {
+  margin-right: 10px;
+}
+
+header nav ul li .caret {
+  position: relative;
+  top: 3px;
+  margin-left: 10px;
+  margin-right: 0px;
+}
+
+@media screen and (max-width: 780px) {
+  body {
+    padding-top: 80px;
+  }
+
+  .menu_bar {
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: #E7E7E7;
+    position: absolute;
+  }
+
+  .menu_bar .bt-menu {
+    display: block;
+    padding: 20px;
+    color: #fff;
+    overflow: hidden;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .menu_bar span {
+    float: right;
+    font-size: 40px;
+  }
+
+  header nav {
+    width: 80%;
+    height: calc(100% - 80px);
+    position: fixed;
+    right: 100%;
+    margin: 0;
+    position: absolute;
+    overflow: scroll;
+  }
+
+  header nav ul li {
+    display: block;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+  }
+
+  header nav ul li a {
+    display: block;
+  }
+
+  header nav ul li .caret {
+    float: right;
+  }
+}
+
+/* footers */
+
+.pie-pagina {
+  width: 100%;
+  background-color: #24252A;
+}
+
+.pie-pagina .grupo {
+
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+
+}
+
+.pie-pagina .grupo .caja figure img {
+
+  width: 40%;
+  height: 40%;
+
+}
+
+
+
+.pie-pagina .grupo .caja h3 {
+
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+
+}
+
+.pie-pagina .grupo .caja p {
+
+  color: #efeefe;
+  margin-bottom: 10px;
+
+}
+
+.pie-pagina .grupo .red-social a {
+
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #efeefe;
+  margin-right: 10px;
+  background-color: black;
+  text-align: center;
+  transition: all 300ms ease;
+  border-radius: 8px;
+
+}
+
+.pie-pagina .grupo .red-social .fa-facebook {
+  background-image: url("../imagenes/pngegg\ \(16\).png");
+  background-size: 50px;
+  background-position: center;
+}
+
+.pie-pagina .grupo .red-social .fa-instagram {
+  background-image: url("../imagenes/pngegg\ \(18\).png");
+  background-size: 55px;
+  background-position: center;
+}
+
+.pie-pagina .grupo .red-social .fa-twitter {
+  background-image: url("../imagenes/pngegg\ \(19\).png");
+  background-size: 55px;
+  background-position: center;
+}
+
+
+.pie-pagina .grupo .red-social a:hover {
+
+  color: #2FEF1E;
+  transform: scale(1.10);
+
+}
+
+.pie-pagina .grupo2 {
+
+  background-color: black;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+
+}
+
+.container {
+
+  border: solid 1px rgba(255, 255, 255, 0.2);
+
+}
+
+.contenedor {
+
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.contenedor button {
+
+  transition: all 0.3s ease 0s;
+
+}

@@ -1,0 +1,257 @@
+* {
+  /*lo utilizamos para el responsive,
+    seria la suma del ancho y relleno de los elementos*/
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: black;
+}
+
+.menu_bar {
+  display: none;
+  position: absolute;
+}
+
+
+header nav {
+  background: #E7E7E7;
+  z-index: 1000;
+  width: 100%;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  position: relative;
+}
+
+header nav ul li:hover {
+  background: #ffffff;
+}
+
+header nav ul li a {
+  color: black;
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+}
+
+header nav ul li a span {
+  margin-right: 10px;
+}
+
+header nav ul li .caret {
+  position: relative;
+  top: 3px;
+  margin-left: 10px;
+  margin-right: 0px;
+}
+
+@media screen and (max-width: 780px) {
+  body {
+    padding-top: 80px;
+  }
+
+  .menu_bar {
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: #E7E7E7;
+    position: absolute;
+  }
+
+  .menu_bar .bt-menu {
+    display: block;
+    padding: 20px;
+    color: #fff;
+    overflow: hidden;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .menu_bar span {
+    float: right;
+    font-size: 40px;
+  }
+
+  header nav {
+    width: 80%;
+    height: calc(100% - 80px);
+    position: fixed;
+    right: 100%;
+    margin: 0;
+    position: absolute;
+    overflow: scroll;
+  }
+
+  header nav ul li {
+    display: block;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+  }
+
+  header nav ul li a {
+    display: block;
+  }
+
+  header nav ul li .caret {
+    float: right;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+/* Productos */
+#contenedor-principal {
+  width: 90%;
+  margin-left: 7%;
+  margin-right: auto;
+  position: absolute;
+
+}
+
+
+#tienda {
+  width: 90%;
+  height: 100%;
+}
+
+#lista_productos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.productos {
+  width: 200px;
+  border: 1px solid grey;
+  border-radius: 20px;
+  padding: 2%;
+  margin-left: 2%;
+  margin-top: 2%;
+  text-align: center;
+}
+
+.productos img {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.addToList {
+  color: black;
+  border: 1px solid #22c55e;
+  font-size: 15px;
+  margin-top: 5px;
+  padding: 8px;
+  border-radius: 15px;
+}
+
+.addToList:hover {
+  color: #22c55e;
+  background-color: #0f172a;
+}
+
+
+
+/* osiblemene te*/
+
+.addToList {
+  margin-top: 10px;
+  border-radius: 20px;
+  padding: 2%;
+  width: 100%;
+  cursor: pointer;
+}
+
+#cartList {
+  right: 0;
+  width: 20%;
+  /* margin-left: 90%; */
+  /* Arriba | Derecha | Abajo | Izquierda */
+  margin: -600px 35px 0 90%;
+}
+
+.productInList,
+#cartList {
+  padding: 2%;
+}
+
+.productInList {
+  display: flex;
+  margin-top: 2%;
+  border-bottom: 1px solid grey;
+}
+
+.productInList .productImg {
+
+  width: 30%;
+  text-align: center;
+}
+
+.productImg img {
+  width: 50%;
+}
+
+.productInList .productName {
+  width: 60%;
+}
+
+.productInList .productPrice {
+  width: 30%;
+  top: 40px;
+  margin-left: 8%;
+  text-align: justify;
+
+}
+
+#total {
+  margin-top: 5%;
+  text-align: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+  padding: 2%;
+  color: black;
+}
+
+
+
+@media screen and (max-width: 780px) {
+
+  /*Productos*/
+  #contenedor-principal {
+    width: 90%;
+    margin-left: 7%;
+    margin-right: auto;
+    text-align: justify;
+  }
+
+  .productInList .productPrice {
+    text-align: right;
+  }
+}
+
+.pagination {
+  bottom: 0;
+  top: 800px;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
